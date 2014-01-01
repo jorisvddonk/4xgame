@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Dev Bootstrap</title>
+
+    <!-- JavaScript/CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="libs/jquery-1.8.1.min.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/handlebars-1.0.0.beta.6.js"></script>
+    <script src="libs/d3.v3.min.js"></script>
+  	<script src="libs/handlebars-template-loader.js"></script> <!-- My template loader -->
+  	<script src="libs/gui-tools.js"></script> <!-- My GUI tools -->
+    <script data-main="js/main.js" src="libs/require.js"></script>
+    
+
+    <!-- Misc functions --> 
+    <script type="text/javascript"> 
+
+    </script>
+
+  <!-- Templates -->
+  <script id="test_template" type="text/x-handlebars-template">
+  		Hello {{name}}!
+	</script>
+
+  <script id="star-template" type="text/x-handlebars-template">
+      <h2>Star: {{name}}</h2>
+      <table class="table table-bordered table-striped table-hover">
+        <tr>
+          <th>Star class</th><td>{{starclass}}</td>
+        </tr>
+        <tr>
+          <th>X</th><td>{{x}}</td>
+        </tr>
+        <tr>
+          <th>Y</th><td>{{y}}</td>
+        </tr>
+      </table>
+  </script>
+
+  <!-- Main stuff -->
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Dev Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Play</a></li>
+			        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" id="nav_actions_1">Action 1</a></li>
+                  <li><a href="#" id="nav_actions_2">Action 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding-top: 60px; padding-left: 20px;">
+		  <div class="span8">
+        <div id="content">
+          <svg>
+            <g id="pcirclesG"></g>
+            <g id="linesG"></g>
+            <g id="circlesG"></g>
+          </svg>
+        </div>
+      </div>
+      <div class="span4">
+        <div id="starcontent"></div>
+      </div>
+	  </div>
+  </body>
+</html>

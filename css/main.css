@@ -1,0 +1,34 @@
+.starClass-O {
+	fill: #9BB0FF;
+}
+
+.starClass-B {
+	fill: #BBCCFF;
+}
+
+.starClass-A {
+	fill: #FBF8FF;
+}
+
+.starClass-F {
+	fill: #FFFFED;
+}
+
+.starClass-G {
+	fill: #FFFF00;
+}
+
+.starClass-K {
+	fill: #FF9833;
+}
+
+.starClass-M {
+	fill: #D20033;
+}
+
+
+.MAP-STARLINES {
+    stroke: black;
+    stroke-opacity: 0.8;
+    z-index: -1;
+}
